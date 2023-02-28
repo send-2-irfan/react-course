@@ -114,14 +114,95 @@
 
 //////////////////////////////////////////////map function ///////////////////////////////////////
 
-const sheetColors = [
-    'red' ,
-    'green' ,
-    'blue' ,
-    'yellow' ,
-    'orange' ,
-]
+// const sheetColors = [
+//     'red' ,
+//     'green' ,
+//     'blue' ,
+//     'yellow' ,
+//     'orange' ,
+// ]
 
-const sheets = sheetColors.map(sheet => `<div>${sheet}</div>`);
+// const sheets = sheetColors.map(sheet => `<div>${sheet}</div>`);
 
-console.log(sheets);
+// console.log(sheets);
+
+
+// const objects = [
+//     {id: 1, name: 'object1', isAlive: true},
+//     {id: 2, name: 'object2', isAlive: true},
+//     {id: 3, name: 'object3', isAlive: false},
+//     {id: 4, name: 'object4', isAlive: true},
+//     {id: 5, name: 'object5', isAlive: false}
+// ]
+
+// const aliObjects = objects.filter(object => object.isAlive)
+
+// console.log(aliObjects);
+
+
+//////////////////////////////////////////////Object Destructuring/////////////////////////////////////
+// const obj ={
+//     name: 'Irfan',
+//     age: 25,
+//     address: {
+//         city: 'Karachi',
+//         country: 'Pakistan'
+//     }
+// }
+
+// const { name, age, address: {city, country} } = obj;
+
+// console.log("Name: " + name, ", Age: " + age, ', City: ' + city,', Country: '+ country);
+
+// const arr1 = [1,2,3,4,5,6,7,8,9,10];
+// const arr2 = [11,12,13,14,15,16,17,18,19,20];
+
+// const arr3 = [...arr1, 'array 2', ...arr2]
+
+// console.log(arr3);
+
+// const obj1 = {
+//     name: 'Irfan'
+// }
+// const obj2 = {
+//     age: 25
+// }
+
+// const combined = {...obj1, ...obj2, location: 'Karachi'};
+
+// console.log(combined);
+
+// const array1 = [1,2,30]
+// const clone = array1.slice(0,3)
+
+// console.log(clone);
+
+
+//////////////////////////////////////////////Classes/////////////////////////////////////
+// class Person {
+//     constructor(name) {
+//         this.name = name;
+//     }
+//     walk() {
+//         console.log('Person is walking ...');
+//     }
+// }
+
+// const person = new Person('Irfan');
+// console.log(person.name)
+// console.log(person.walk(this))
+
+// class Teacher extends Person {
+//     constructor(name, degree) {
+//         super(name);
+//         this.degree = degree ;
+//     }
+//     teach() {
+//         console.log("Teacher is teaching ...");
+//     }
+// }
+
+// const teacher = new Teacher('Irfan' , 'MCS');
+
+// console.log(teacher.name);
+// console.log(teacher.teach());
