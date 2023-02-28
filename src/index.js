@@ -104,10 +104,24 @@
 
 ///////////////////////////////////////////////Arrow functions and this keyword///////////////////////////////////////////////  
 
-const person = {
-    talk () {
-        setTimeout(() => console.log('Hello', this), 1000)
-    }
-};
+// const person = {
+//     talk () {
+//         setTimeout(() => console.log('Hello', this), 1000)
+//     }
+// };
 
-person.talk();
+// person.talk();
+
+//////////////////////////////////////////////map function ///////////////////////////////////////
+
+const sheetColors = [
+    'red' ,
+    'green' ,
+    'blue' ,
+    'yellow' ,
+    'orange' ,
+]
+
+const sheets = sheetColors.map(sheet => `<div>${sheet}</div>`);
+
+console.log(sheets);
