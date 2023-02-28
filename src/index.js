@@ -1,17 +1,47 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+///////////////////////////////////////Let VS Const VS Var///////////////////////////////////////
+// let -> block scope variable
+// var -> function scope variable
+// const -> block scope variable
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// function sayHello () {
+//   for(let i = 0 ; i<5 ; i++) {
+//     console.log(i);
+//   }
+// //   console.log(i)
+// }
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// sayHello();
+
+// const num = 5;
+// num = 5 ;
+
+//////////////////////////////////Objects/////////////////////////////////////
+
+// const person = {
+//     name: 'Irfan',
+//     walk: function() {},
+//     talk() {console.log('Person Talks')},
+//     eat() {console.log('Person Eats')}
+// };
+
+// person.eat();
+
+// console.log(person.name);
+// console.log(person['name']);
+
+// const targetMember = 'name';
+// console.log(person[targetMember.value]);
+
+///////////////////////////////This Keyword////////////////////////////////////
+
+const person = {
+    name: 'Irfan',
+    walk() {
+        console.log(this);
+    }
+};
+
+person.walk();
+
+const walk = person.walk;
+walk();
