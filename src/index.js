@@ -3,6 +3,8 @@
 // var -> function scope variable
 // const -> block scope variable
 
+import { Teacher } from "./Teacher";
+
 // function sayHello () {
 //   for(let i = 0 ; i<5 ; i++) {
 //     console.log(i);
@@ -179,30 +181,15 @@
 
 
 //////////////////////////////////////////////Classes/////////////////////////////////////
-// class Person {
-//     constructor(name) {
-//         this.name = name;
-//     }
-//     walk() {
-//         console.log('Person is walking ...');
-//     }
-// }
+
 
 // const person = new Person('Irfan');
 // console.log(person.name)
 // console.log(person.walk(this))
 
-// class Teacher extends Person {
-//     constructor(name, degree) {
-//         super(name);
-//         this.degree = degree ;
-//     }
-//     teach() {
-//         console.log("Teacher is teaching ...");
-//     }
-// }
 
-// const teacher = new Teacher('Irfan' , 'MCS');
+
+const teacher = new Teacher('Irfan' , 'MCS');
 
 // console.log(teacher.name);
-// console.log(teacher.teach());
+console.log(teacher.teach());
