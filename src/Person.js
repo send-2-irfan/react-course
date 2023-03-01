@@ -5,4 +5,7 @@ export class Person {
     walk() {
         console.log('Person is walking ...');
     }
+    talking() {
+        console.log('Person is talking ...');
+    }
 }
