@@ -14,7 +14,8 @@
         this.handleIncrement = this.handleIncrement.bind(this);
     }
 
-    handleIncrement  = ()=>{
+    handleIncrement  = (product)=>{
+        console.log(product)
         this.setState({ count: this.state.count + 1 });
     }
 
@@ -23,7 +24,7 @@
         return (
             <div>
                 <span className={ this.getBadgeClasses() } style={{ fontSize:30 , fontWeight: 'bold'}}>{this.formatCount()}</span>     
-                <button className='btn btn-secondary btn-sm' onClick={this.handleIncrement}>Increment</button>
+                <button className='btn btn-secondary btn-sm' onClick={() => this.handleIncrement(this.state.count)}>Increment</button>
                 {/* <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul> */}
                 {/* { this.state.tags.length === 3 && <p>There are 3 tags!</p>} */}
                 { this.threeTags()}
